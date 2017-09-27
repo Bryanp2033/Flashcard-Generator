@@ -1,10 +1,7 @@
 function ClozeCard(text, cloze){
     this.text = text;
     this.cloze = cloze;
-    this.partial = function(){
-        new_word = this.text.replace(this.cloze, "_______")
-        console.log(new_word)
-    }
+    this.partial = this.text.replace(this.cloze, "_______")
 }
 
 
