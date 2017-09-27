@@ -2,15 +2,8 @@ function ClozeCard(text, cloze){
     this.text = text;
     this.cloze = cloze;
     this.partial = function(){
-
-        value = this.text.split(" ");
-        for(i = 0; i < value.length; i++){
-            if(this.cloze == value[i]){
-                this.text.replace(value[i] , "______")
-                console.log(this.text)
-            }
-        }
-
+        new_word = this.text.replace(this.cloze, "_______")
+        console.log(new_word)
     }
 }
 
