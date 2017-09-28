@@ -5,11 +5,11 @@ var basicData = require('./json/basic.json');
 var inquirer = require('inquirer');
 
 // keeps count of the questions being asked
-var count = 0
+var count = 0;
 // keeps count of user's correct answers
-var correct = 0
+var correct = 0;
 // keeps count of user's incorrect answers
-var incorrect = 0
+var incorrect = 0;
 
 // function that starts the whole process
 var startBasicQuiz = function(){
@@ -20,7 +20,7 @@ var startBasicQuiz = function(){
     }else{
         endGame();
     }
-}
+};
 
 startBasicQuiz();
 
@@ -50,13 +50,13 @@ function prompt(){
             incorrect ++
             startBasicQuiz();
         }
-    })
-}
+    });
+};
 
 // function that runs if it run out of questions to ask
 function endGame(){
-    console.log("_________\n" + "\nYour Results")
+    console.log("_________\n" + "\nYour Results");
     console.log("Answers Correct: " + correct);
-    console.log("Answers Incorrect: " + incorrect + "\n")
-}
+    console.log("Answers Incorrect: " + incorrect + "\n");
+};
 

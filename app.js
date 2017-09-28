@@ -11,7 +11,7 @@ var startGame = function(){
     ]).then(function(result){
 
         // getting the user's input from inquirer and make it lowercase
-        reply = result.reply.toLowerCase()
+        reply = result.reply.toLowerCase();
 
         // if user replies the inquirer message with "basic"
         if(reply === "basic"){
