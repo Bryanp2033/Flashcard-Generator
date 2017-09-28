@@ -3,60 +3,53 @@ var cardDate = require('./json/cloze.json');
 var inquirer = require('inquirer');
 
 
+
+
 var count = 0
+var correct = 0
+var incorrect = 0
 
-// function startgame(){
 
+var startClozeQuiz = function(){
 
-   var askQuestion = function(){
+    if(count < cardDate.length){
+        prompt();
+    }else{
+        endGame();
+    }
+}
 
-        if(count < cardDate.length){
-            console.log("NEW QUESTION");
+startClozeQuiz();
 
-            inquirer.prompt([
-                {
-                    name: "answer",
-                    message: cardDate[count].partial
-                }
-            ]).then(function(result){
-
-                if(result.answer === cardDate[count].cloze){
-                    console.log("you got it right" + "\n" + cardDate[count].text)
-                    count ++;
-                    askQuestion();
-                } else {
-                    console.log("you got it wrong" + "\n" + cardDate[count].text)
-                    count ++
-                    askQuestion();
-                }
-            })
+function prompt(){
+    console.log("\nNEW QUESTION");
+    console.log("------------")
+    inquirer.prompt([
+        {
+            name: "answer",
+            message: cardDate[count].partial
         }
-   }
-// }
+    ]).then(function(result){
 
-// startgame();
-askQuestion();
+        answer = result.answer.toLowerCase()
 
-
-
-
-
-
-
-
-
-
-
-
+        if(answer === cardDate[count].cloze){
+            console.log("\nyou got it right!" + "\n" + cardDate[count].text)
+            count ++;
+            correct ++
+            startClozeQuiz();
+        } else {
+            console.log("\nyou got it wrong!" + "\n" + cardDate[count].text)
+            count ++
+            incorrect ++
+            startClozeQuiz();
+        }
+    })
+}
 
 function endGame(){
-    //if count reached limit?
+    console.log("_________\n" + "\nYour Results")
+    console.log("Answers Correct: " + correct);
+    console.log("Answers Incorrect: " + incorrect + "\n")
 }
 
-function round(){
-    var count = 0;
-}
-
-function prompts(){
-    //inquirer?
-}
