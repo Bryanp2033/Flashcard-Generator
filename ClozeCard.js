@@ -3,8 +3,6 @@ var cardDate = require('./json/cloze.json');
 var inquirer = require('inquirer');
 
 
-
-
 var count = 0
 var correct = 0
 var incorrect = 0

@@ -1,22 +1,22 @@
 [
     {
         "front": "What is the fastest bird on foot?",
-        "back": "Ostrich"
+        "back": "ostrich"
     },
     {
         "front": "A heptagon is a shape with how many sides?",
-        "back": 7
+        "back": "7"
     },
     {
         "front": "How many years is one regular term for a U.S. Representative?",
-        "back": 2
+        "back": "2"
     },
     {
         "front":"Who was the first person to step foot on the moon?",
-        "back": "Neil Armstrong"
+        "back": "neil armstrong"
     },
     {
         "front": "'Carefully' is an example of what type of word?",
-        "back":"Adverb"
+        "back":"adverb"
     }
 ]
