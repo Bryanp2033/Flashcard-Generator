@@ -1,22 +1,27 @@
 [
     {
         "text": "The Ostrich is the fastest bird on foot",
-        "cloze": "Ostrich"
+        "cloze": "Ostrich",
+        "partial": "The _______ is the fastest bird on foot:"
     },
     {
         "text": "A heptagon is a shape with 7 sides",
-        "cloze": "7"
+        "cloze": "heptagon",
+        "partial": "A ________ is a shape with 7 sides:"
     },
     {
         "text": "2 years is for one regular term for a U.S. Representative",
-        "cloze": "2"
+        "cloze": "Representative",
+        "partial": "2 years is for one regular term for a U.S. ______________:"
     },
     {
         "text": "Neil Armstrong was the first person to step foot on the moon",
-        "cloze": "Neil Armstrong"
+        "cloze": "Neil Armstrong",
+        "partial": "____ _________ was the first person to step foot on the moon:"
     },
     {
         "text": "'Carefully' is an Adverb",
-        "cloze": "Adverb"
+        "cloze": "Adverb",
+        "partial": "'Carefully' is an ______:"
     }
 ]
